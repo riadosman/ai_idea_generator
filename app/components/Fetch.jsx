@@ -108,7 +108,7 @@ function Fetch({ idea }) {
 
   if (!finishedData.length)
     return (
-      <p className="text-[#00296B] font-medium min-h-[160px] flex items-center justify-center">
+      <p className="text-[#00296B] font-medium min-h-[160px] flex items-center justify-center text-center px-4">
         Enter a topic and generate business ideas.
       </p>
     );
@@ -118,39 +118,39 @@ function Fetch({ idea }) {
       {finishedData.map((idea, idx) => (
         <div
           key={idx}
-          className="bg-white rounded-2xl p-6 shadow-md border border-gray-200"
+          className="bg-white rounded-2xl p-6 shadow-md border border-gray-200 max-w-4xl mx-auto"
         >
-          <h3 className="text-2xl font-extrabold text-[#00296B] mb-3">
+          <h3 className="text-2xl font-extrabold text-[#00296B] mb-3 break-words">
             {idea.name}
           </h3>
 
-          <p className="mb-2 text-[#0047AB]">
+          <p className="mb-2 text-[#0047AB] break-words">
             <strong className="font-semibold text-[#F9AC19]">Audience:</strong>{" "}
             {idea.targetAudience}
           </p>
-          <p className="mb-2 text-[#0047AB]">
+          <p className="mb-2 text-[#0047AB] break-words">
             <strong className="font-semibold text-[#F9AC19]">Problem:</strong>{" "}
             {idea.problemSolved}
           </p>
-          <p className="mb-2 text-[#0047AB]">
+          <p className="mb-2 text-[#0047AB] break-words">
             <strong className="font-semibold text-[#F9AC19]">
               How it Works:
             </strong>{" "}
             {idea.howItWorks}
           </p>
-          <p className="mb-2 text-[#0047AB]">
+          <p className="mb-2 text-[#0047AB] break-words">
             <strong className="font-semibold text-[#F9AC19]">
               Market Potential:
             </strong>{" "}
             {idea.marketPotential}
           </p>
-          <p className="mb-2 text-[#0047AB]">
+          <p className="mb-2 text-[#0047AB] break-words">
             <strong className="font-semibold text-[#F9AC19]">
               Monetization:
             </strong>{" "}
             {idea.monetization}
           </p>
-          <p className="text-[#0047AB]">
+          <p className="text-[#0047AB] break-words">
             <strong className="font-semibold text-[#F9AC19]">
               Marketing Strategy:
             </strong>{" "}
